@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <img class="background" src = "assets/tomi.jpg" />
+  <div class="box">
+    <h1>AUTOMI</h1>
+    <h3>40 év bölcsessége</h3>
+    <button (click)="generate()">Taníts, mester!</button>
+    <div ngx-auto-scroll class="text">
+      <span *ngFor="let word of words">
+        <span class="word" *ngIf="word !== ':)'">{{word}}</span>
+        <img class="smiley" *ngIf="(word === ':)')" src="assets/smiley.png"/>
+      </span>
+    </div>
+  </div>
+</div>
